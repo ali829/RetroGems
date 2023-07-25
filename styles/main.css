@@ -1,30 +1,153 @@
 :root {
-    --white-: #ffffff;
-    --purple-1: #231234;
-    --purple-2: #ac13cf;
-    --purple-3: #7248cc;
-    --size-sm: 8px;
-    --size-md: 16px;
-    --size-lg: 28px;
-    --font-primary: "Public Pixel Font", sans-serif;
-    --font-secondary: "Poppins", sans-serif;
+  --white-: #ffffff;
+  --purple-1: #411248;
+  --purple-2: #ac13cf;
+  --purple-3: #7248cc;
+  --size-sm: 8px;
+  --size-md: 16px;
+  --size-lg: 28px;
+  --size-xl: 56px;
+  --font-primary: "Public Pixel Font", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../resources/fonts/Poppins/Poppins-Regular.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Public Pixel Font";
+  src: url("../resources/fonts/public-pixel-font/PublicPixel-z84yD.ttf")
+    format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to right, var(--purple-1), var(--purple-2));
+}
+h1 {
+  font-family: var(--font-primary);
+  color: var(--white-);
+  font-size: var(--size-xl);
+}
+.header-container {
+  width: 80%;
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-container .left-header h1:nth-child(1) {
+  margin: var(--size-sm) 0;
+  -webkit-text-stroke: 0.5px var(--purple-3);
+  text-stroke: 0.5px var(--purple-3);
+  color: transparent;
+  font-size: var(--size-xl);
+}
+
+.header-container .left-header h4 {
+  font-family: var(--font-secondary);
+  width: 80%;
+  color: var(--white-);
+  font-size: var(--size-md);
+  line-break: anywhere;
+  margin: var(--size-md) 0;
+  font-weight: 100;
+}
+
+.header-container .left-header button {
+  position: relative;
+  appearance: none;
+  border: none;
+  padding: var(--size-sm) var(--size-lg);
+  border-radius: var(--size-sm);
+  background: linear-gradient(90deg, var(--purple-3) 0%, var(--purple-2) 90%);
+  color: var(--white-);
+  cursor: pointer;
+  font-size: var(--size-md);
+  font-family: var(--font-secondary);
+  overflow: hidden;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header-container .left-header button::before {
+  content: "Shop now";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--purple-3);
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  overflow: hidden;
+}
+.header-container .left-header button:hover:before {
+  transform: translateX(0);
+}
+.header-container .right-header .stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.header-container .right-header .stats-container .stats-item {
+  flex: 1;
+  background: linear-gradient(90deg, var(--purple-1) 0%, var(--purple-2) 90%);
+  margin: var(--size-sm) var(--size-sm);
+  position: relative;
+  padding: 2px;
+  border-radius: var(--size-sm);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.header-container .right-header .stats-container .stats-item:hover {
+  background: linear-gradient(90deg, var(--purple-2) 0%, var(--purple-1) 90%);
+  transform: scale(1.01);
+}
+.header-container .right-header .stats-container .stats-item div {
+  background-color: var(--purple-2);
+  border-radius: var(--size-sm);
+  padding: var(--size-lg) var(--size-sm);
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--white-);
+}
+
+.header-container .right-header .stats-container .stats-item div h3 {
+  font-family: var(--font-primary);
+  margin: var(--size-sm) 0;
+  font-weight: 300;
+}
+.header-container .right-header .stats-container .stats-item div p {
+  font-family: var(--font-secondary);
+  margin: var(--size-sm) 0;
+  font-weight: 300;
+  font-size: var(--size-md);
+}
+.header-container .right-header img {
+  transition: all 0.4s ease-in-out;
+  animation: bounce 2s ease-in-out infinite alternate;
+}
+
+/* animations */
+
+@keyframes bounce {
+  from {
+    transform: translateY(O);
   }
-  
-  @font-face {
-    font-family: "Poppins";
-    src: url("../resources/fonts/Poppins/Poppins-Regular.ttf") format("woff2");
+  to {
+    transform: translateY(10%);
   }
-  @font-face {
-    font-family: "Public Pixel Font";
-    src: url("../resources/fonts/public-pixel-font/PublicPixel-z84yD.ttf")
-      format("woff2");
-  }
-  
-  body {
-    background-color: var(--purple-1);
-  }
-  h1 {
-    font-family: var(--font-primary);
-    color: var(--white-);
-  }
-  
+}
