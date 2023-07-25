@@ -12,7 +12,8 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("../resources/fonts/Poppins/Poppins-Regular.ttf") format("woff2");
+  src: url("../resources/fonts/varelaround-Regular.ttf") format("woff2");
+
 }
 @font-face {
   font-family: "Public Pixel Font";
@@ -22,8 +23,11 @@
 
 body {
   background-color: var(--purple-1);
+  font-family: var(--font-secondary);
+  color: var(--white-);
 }
 h1 {
   font-family: var(--font-primary);
   color: var(--white-);
 }
+
