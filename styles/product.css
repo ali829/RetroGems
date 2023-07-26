@@ -1,0 +1,134 @@
+:root {
+    --white-: #ffffff;
+    --purple-1: #231234;
+    --purple-2: #ac13cf;
+    --purple-3: #7248cc;
+    --size-sm: 8px;
+    --size-md: 16px;
+    --size-lg: 28px;
+    --size-xl: 56px;
+    --font-primary: "Public Pixel Font", sans-serif;
+    --font-secondary: "Poppins", sans-serif;
+  }
+  
+  @font-face {
+    font-family: "Public Pixel Font"; /* Use the font family name as provided by FontSpace */
+    src: url("PublicPixel-z84yD.ttf") format("truetype");
+    /* Add more src lines for other font formats if provided by FontSpace */
+  }
+  
+  body {
+    background-color: var(--purple-1);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-family: var(--font-primary);
+    color: var(--white-);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    margin: 0 80px;
+  }
+  
+  .left-section {
+    flex: 1;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    margin-right: 10px;
+    justify-content: space-around;
+    font-size: 14px;
+  }
+  
+  .contacts {
+    color: var(--purple-3);
+  }
+  
+  .center-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Public Pixel Font", sans-serif;
+    font-size: var(--size-lg);
+  }
+  
+  .right-section {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 35px;
+  }
+  
+  .left-section a:hover {
+    color: var(--purple-3);
+  }
+  
+  .right-section a:hover {
+    color: var(--purple-3);
+  }
+  
+  section{
+    padding: 0 11%;
+  }
+  
+  .hero-text h1{
+    font-size: var(--size-lg);
+    line-height: 1.3;
+    font-weight: 800px;
+  }
+  
+  img{
+    width:  50px;
+    height: 90px;
+    position: absolute;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 5px 40px;
+  }
+  
+  .hero-in img{
+    border: 2px solid var(--purple-3);
+    border-radius: 16px;
+    padding: 10px 40px;
+    margin: 1px 5px;
+  }
+  
+  .hero-two-img {
+    display: inline-block;
+    padding: 150px 0px;
+    box-sizing: border-box;
+    margin: 0px -7px;
+    position: relative;
+  }
+  .two-imgs{
+    width:  80px;
+    height: 65px;
+    margin-top: -7px;
+  }
+  .big-pic{
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-end; 
+    margin: 5px 200px;
+    margin-top: -155px;
+    margin-left: 75px;
+  }
+  .big{
+    width:  212px;
+    height: 375px;
+    margin: -225px 90px;
+  }
