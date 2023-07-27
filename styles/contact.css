@@ -23,19 +23,23 @@
 
 
 body {
+  overflow-x: hidden;
   font-family: var(--font-secondary);
   color: var(--white-);
   margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient( rgba(35, 18, 52, 0.9), rgba(35, 18, 52, 0.9)) , url('/resources/rapazgames-space-bg-grand.jpg');
   height: 100vh;
   width: 100vw; 
 }
 
 .contact-main{
   /* background-image: url('/resources/rapazgames-space-bg-grand.jpg'); */
-  background: linear-gradient( rgba(35, 18, 52, 0.8), rgba(35, 18, 52, 0.8)) , url('/resources/rapazgames-space-bg-grand.jpg');
   /* background-repeat: no-repeat; */
   background-size: cover;
+  height: auto;
   /* position: relative; */
+  line-height: 1.5;
 
 }
 
@@ -59,13 +63,12 @@ h1 {
   font-family: var(--font-primary);
   font-size: 40px;
   color: var(--white-);
-  margin: 0 auto;
-  padding: 10px;
+  margin: 0 auto ;
+  padding-left: 10px;
   padding-top: 30px;
   padding-bottom: 50px;
-  width: 1200PX;
+  max-width: 1200PX;
   z-index: 1;
-  position: relative;
 }
 
 h2 {
@@ -81,17 +84,17 @@ h2 {
   max-width: 1200px ;
   margin: 0 auto;
   padding: 10px;
+  padding-right: 50px;
+  height: 100vh;
 }
 .left-column {
   flex-basis: 50%;
   padding-right: 20px;
-  margin-left: 20;
   z-index: 1;
-
 }
 .right-column {
-  flex-basis: 35%;
-  margin-right: 30px;
+  flex-basis: 40%;
+  padding: 0 auto;
   z-index: 1;
 }
 
@@ -115,6 +118,13 @@ h2 {
   display: block;
   margin-bottom: 8px;
 }
+
+/* .contact-form{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+} */
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -124,7 +134,6 @@ h2 {
   border-radius: 5px;
   background-color: transparent; 
   padding: 10px;
-
 }
 .contact-form textarea {
   resize: vertical;
