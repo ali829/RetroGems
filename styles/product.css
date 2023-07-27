@@ -1,4 +1,3 @@
-
 :root {
   --white-: #ffffff;
   --purple-1: #231234;
@@ -35,56 +34,10 @@ h1 {
   color: var(--white-);
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5px;
-  margin: 0 80px;
-}
-
-.left-section {
-  flex: 1;
-  display: flex;
-  font-family: "Poppins", sans-serif;
-  margin-right: 10px;
-  justify-content: space-around;
-  font-size: 14px;
-}
-
-.contacts {
-  color: var(--purple-3);
-}
-
-.center-section {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-family: "Public Pixel Font", sans-serif;
-  font-size: var(--size-lg);
-}
-
-.right-section {
-  flex: 1;
-  display: flex;
-  justify-content: space-around;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-}
-
 a {
   text-decoration: none;
   color: #ffffff;
   margin: 0 35px;
-}
-
-.left-section a:hover {
-  color: var(--purple-3);
-}
-
-.right-section a:hover {
-  color: var(--purple-3);
 }
 
 section {
@@ -183,13 +136,13 @@ img {
 .quantity-container {
   display: flex;
   align-items: center;
-  width: 120px; 
-  height: 30px; 
+  width: 120px;
+  height: 30px;
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
-  background-color:var(--white-);
+  background-color: var(--white-);
   margin-left: 466px;
 }
 
@@ -214,7 +167,6 @@ img {
 .plus {
   right: 0;
 }
-
 
 .quantity::-webkit-inner-spin-button,
 .quantity::-webkit-outer-spin-button {
@@ -254,6 +206,7 @@ img {
 
 .hero-text {
   padding: 0 11%;
+  margin: 100px 0;
 }
 
 .slide-container {
@@ -296,12 +249,12 @@ img {
   width: 240px;
   height: 370px;
   transition: 0.5s;
-background-color: #7c078e30;
+  background-color: #7c078e30;
   border-radius: 30px;
 }
 
 .button:hover {
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -322,14 +275,14 @@ background-color: #7c078e30;
   color: #fff;
   padding: 15px;
   border-radius: 30px;
-  opacity: 0; 
-  transition: opacity 0.3s ease; 
+  opacity: 0;
+  transition: opacity 0.3s ease;
   font-family: var(--font-secondary);
   text-align: center;
 }
 
 .slides-div:hover .slide-text {
-  opacity: 1; 
+  opacity: 1;
 }
 
 .slide-text h3 {
@@ -342,35 +295,3 @@ background-color: #7c078e30;
   font-size: 14px;
   text-align: center;
 }
-
-=======
-:root {
-  --white-: #ffffff;
-  --purple-1: #231234;
-  --purple-2: #ac13cf;
-  --purple-3: #7248cc;
-  --size-sm: 8px;
-  --size-md: 16px;
-  --size-lg: 28px;
-  --font-primary: "Public Pixel Font", sans-serif;
-  --font-secondary: "Poppins", sans-serif;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../resources/fonts/Poppins/Poppins-Regular.ttf") format("woff2");
-}
-@font-face {
-  font-family: "Public Pixel Font";
-  src: url("../resources/fonts/public-pixel-font/PublicPixel-z84yD.ttf")
-    format("woff2");
-}
-
-body {
-  background-color: var(--purple-1);
-}
-h1 {
-  font-family: var(--font-primary);
-  color: var(--white-);
-}
-

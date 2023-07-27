@@ -13,7 +13,6 @@
 @font-face {
   font-family: "Poppins";
   src: url("../resources/fonts/varelaround-Regular.ttf") format("woff2");
-
 }
 @font-face {
   font-family: "Public Pixel Font";
@@ -21,26 +20,26 @@
     format("woff2");
 }
 
-
 body {
   overflow-x: hidden;
   font-family: var(--font-secondary);
   color: var(--white-);
   margin: 0;
   box-sizing: border-box;
-  background: linear-gradient( rgba(35, 18, 52, 0.9), rgba(35, 18, 52, 0.9)) , url('/resources/rapazgames-space-bg-grand.jpg');
+  background: linear-gradient(rgba(35, 18, 52, 0.9), rgba(35, 18, 52, 0.9)),
+    url("/resources/rapazgames-space-bg-grand.jpg");
   height: 100vh;
-  width: 100vw; 
+  width: 100vw;
 }
 
-.contact-main{
+.contact-main {
   /* background-image: url('/resources/rapazgames-space-bg-grand.jpg'); */
   /* background-repeat: no-repeat; */
   background-size: cover;
   height: auto;
   /* position: relative; */
   line-height: 1.5;
-
+  margin: 50px 0;
 }
 
 /* .contact-main::before{
@@ -63,11 +62,11 @@ h1 {
   font-family: var(--font-primary);
   font-size: 40px;
   color: var(--white-);
-  margin: 0 auto ;
+  margin: 0 auto;
   padding-left: 10px;
   padding-top: 30px;
   padding-bottom: 50px;
-  max-width: 1200PX;
+  max-width: 1200px;
   z-index: 1;
 }
 
@@ -81,7 +80,7 @@ h2 {
 .container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px ;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
   padding-right: 50px;
@@ -100,17 +99,15 @@ h2 {
 
 .address,
 .email,
-.phone
-{ 
-  display: flex; 
+.phone {
+  display: flex;
   align-items: center;
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
 .adress-text,
 .infomail,
-.phonenumber
-{
+.phonenumber {
   margin-left: 10px;
 }
 
@@ -132,7 +129,7 @@ h2 {
   margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: transparent; 
+  background-color: transparent;
   padding: 10px;
 }
 .contact-form textarea {
@@ -142,23 +139,20 @@ h2 {
   background-color: var(--purple-3);
   color: #fff;
   padding: 10px 20px;
-  border: none ;
+  border: none;
   cursor: pointer;
   border-radius: 5px;
 }
 
 #address,
 #infomail,
-#phonenumber
-{
+#phonenumber {
   font-weight: bold;
 }
 
 #fname,
 #lname,
 #email,
-#message
-{
+#message {
   color: #fff;
-
 }

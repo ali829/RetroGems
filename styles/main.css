@@ -25,17 +25,14 @@
   src: url("../resources/fonts/public-pixel-font/PublicPixel-z84yD.ttf")
     format("woff2");
 }
-html,
-body {
-  margin: 0;
-  height: 100%;
-}
+
 main {
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
 }
 body {
+  background: var(--purple-1);
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr;
@@ -63,9 +60,6 @@ section {
   margin: 0;
 }
 
-body {
-  background: linear-gradient(to right, var(--purple-1), var(--purple-2));
-}
 h1 {
   font-family: var(--font-primary);
   color: var(--white-);
@@ -87,6 +81,8 @@ h2 {
   max-width: 400px;
   margin: var(--size-md) auto;
   color: var(--white-);
+  text-transform: uppercase;
+  line-height: var(--size-xl);
 }
 p.title_para {
   font-family: var(--font-secondary);
@@ -320,6 +316,9 @@ p.title_para {
   color: transparent;
   font-size: var(--size-xl);
 }
+.header-container .left-header h1 {
+  text-align: start;
+}
 
 .header-container .left-header h4 {
   font-family: var(--font-secondary);
@@ -513,7 +512,7 @@ p.title_para {
   gap: var(--size-lg);
 }
 .catalog-container .catalog-items-container .catalog-item {
-  background-color: var(--purple-1);
+  background-color: #7c078e30;
   width: 18%;
   padding: var(--size-xl) var(--size-md);
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
