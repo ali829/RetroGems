@@ -1,3 +1,4 @@
+
 :root {
   --white-: #ffffff;
   --purple-1: #231234;
@@ -340,5 +341,36 @@ background-color: #7c078e30;
   margin: 5px 0 0;
   font-size: 14px;
   text-align: center;
+}
+
+=======
+:root {
+  --white-: #ffffff;
+  --purple-1: #231234;
+  --purple-2: #ac13cf;
+  --purple-3: #7248cc;
+  --size-sm: 8px;
+  --size-md: 16px;
+  --size-lg: 28px;
+  --font-primary: "Public Pixel Font", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../resources/fonts/Poppins/Poppins-Regular.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Public Pixel Font";
+  src: url("../resources/fonts/public-pixel-font/PublicPixel-z84yD.ttf")
+    format("woff2");
+}
+
+body {
+  background-color: var(--purple-1);
+}
+h1 {
+  font-family: var(--font-primary);
+  color: var(--white-);
 }
 
