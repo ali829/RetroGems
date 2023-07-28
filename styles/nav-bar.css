@@ -73,7 +73,7 @@ a {
 }
 
 /* coming soon page style */
-* {
+body {
   box-sizing: border-box;
   margin: 0;
 }
