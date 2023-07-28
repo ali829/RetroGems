@@ -498,7 +498,7 @@ p.title_para {
 ** end of style of catalog section
 */
 .catalog-container {
-  width: 80%;
+  width: 75%;
   margin: var(--size-xl) auto;
   text-align: center;
 }
@@ -514,7 +514,7 @@ p.title_para {
   flex-wrap: wrap;
   gap: var(--size-lg);
 }
-.catalog-container .catalog-items-container .catalog-item {
+.catalog-container .catalog-items-container a {
   background-color: var(--purple-3);
   width: 18%;
   padding: var(--size-xl) var(--size-md);
@@ -523,23 +523,30 @@ p.title_para {
   border-radius: var(--size-md);
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   cursor: pointer;
+  margin: 0;
 }
 
-.catalog-container .catalog-items-container .catalog-item:hover {
+.catalog-container .catalog-items-container a:hover {
   transform: translateY(8px);
 }
-.catalog-container .catalog-items-container .catalog-item img {
-  width: 90%;
-  height: 80%;
+.catalog-container .catalog-items-container a .catalog-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.catalog-container .catalog-items-container a .catalog-item img {
+  width: 188px;
+  height: 204px;
   object-fit: contain;
 }
-.catalog-container .catalog-items-container .catalog-item h5 {
+.catalog-container .catalog-items-container a .catalog-item h5 {
   color: var(--white-);
   margin: var(--size-sm) 0;
   font-family: var(--font-secondary);
   font-weight: 100;
 }
-.catalog-container .catalog-items-container .catalog-item p {
+.catalog-container .catalog-items-container a .catalog-item p {
   color: var(--white-);
   font-family: var(--font-secondary);
   font-size: var(--size-md);
